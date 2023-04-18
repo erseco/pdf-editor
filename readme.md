@@ -18,3 +18,4 @@ Sin instalación. Sin servidor. ¯\_(ツ)_/¯ [https://pdf-editor.ernesto.es](ht
 - Compatible con dispositivos móviles.
 - Arrastra y suelta para subir tu PDF.
 - Basado en https://github.com/ShizukuIchi/pdf-editor
+
