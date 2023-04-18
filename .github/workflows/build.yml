@@ -1,4 +1,5 @@
-name: Build and Deploy
+---
+name: Build & Publish to GitHub Pages
 
 on:
   push:
@@ -6,26 +7,29 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14
+      - name: GitHub Checkout
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: yarn install
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
 
-    - name: Build
-      run: yarn build
+      - name: Install dependencies
+        run: yarn install
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+      - name: Build
+        run: yarn build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          allow_empty_commit: true
+          publish_dir: ./public
+          cname: ernesto.es
