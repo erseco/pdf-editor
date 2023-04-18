@@ -1,24 +1,22 @@
 # PDF Editor
 
-No install. No server. ¯\\\_(ツ)\_/¯ https://pdf-editor.now.sh
-![It just works!](https://i.imgur.com/m3weLXQ.gif)
+Sin instalación. Sin servidor. ¯\_(ツ)_/¯ [https://pdf-editor.ernesto.es](https://pdf-editor.ernesto.es/) 
+![¡Funciona!](https://i.imgur.com/m3weLXQ.gif)
 
-## How to use pdf-editor?
 
-1. Click `Choose PDF` to upload a `.pdf` file.
-2. Add images, signatures, text to your PDF.
-3. Click `Save`.
-4. That's it! All is done **in your browser**.
+## ¿Cómo utilizar el editor de PDF? 
 
-## Features
+1. Haz clic en `Elegir PDF` para subir un archivo `.pdf`.
+2. Añade imágenes, firmas, texto a tu PDF. 
+3. Haz clic en `Guardar`. 
+4. ¡Eso es todo! Todo se realiza **en tu navegador**.
 
-- Resize and move everything.
-- Add signatures.
-- Adjust line height, font size, font family.
-- Mobile friendly.
-- Drag and drop to upload your PDF.
-- 支援中文（標楷體）。
+## Características
+- Redimensiona y mueve todo.
+- Añade firmas.
+- Ajusta el interlineado, tamaño de fuente, familia de fuentes.
+- Compatible con dispositivos móviles.
+- Arrastra y suelta para subir tu PDF.
+- Basado en https://github.com/ShizukuIchi/pdf-editor
 
----
-
-LICENSE MIT © 2020 ShizukuIchi
+LICENCIA MIT 2023 ernesto.es

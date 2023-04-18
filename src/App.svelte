@@ -70,7 +70,7 @@
       allObjects = pages.map(() => []);
       pagesScale = Array(numPages).fill(1);
     } catch (e) {
-      console.log("Failed to add pdf.");
+      console.log("No se pudo agregar el pdf.");
       throw e;
     }
   }
@@ -102,7 +102,7 @@
         pIndex === selectedPageIndex ? [...objects, object] : objects
       );
     } catch (e) {
-      console.log(`Fail to add image.`, e);
+      console.log(`No se pudo agregar la imagen.`, e);
     }
   }
   function onAddTextField() {
@@ -110,7 +110,7 @@
       addTextField();
     }
   }
-  function addTextField(text = "New Text Field") {
+  function addTextField(text = "Nuevo campo de texto") {
     const id = genID();
     fetchFont(currentFont);
     const object = {
@@ -216,7 +216,7 @@
       class="whitespace-no-wrap bg-blue-500 hover:bg-blue-700 text-white
       font-bold py-1 px-3 md:px-4 rounded mr-3 cursor-pointer md:mr-4"
       for="pdf">
-      Choose PDF
+      Elija un PDF
     </label>
     <div
       class="relative mr-3 flex h-8 bg-gray-400 rounded-sm overflow-hidden
@@ -227,7 +227,7 @@
         for="image"
         class:cursor-not-allowed={selectedPageIndex < 0}
         class:bg-gray-500={selectedPageIndex < 0}>
-        <img src="image.svg" alt="An icon for adding images" />
+        <img src="image.svg" alt="Un icono para agregar imágenes." />
       </label>
       <label
         class="flex items-center justify-center h-full w-8 hover:bg-gray-500
@@ -236,7 +236,7 @@
         class:cursor-not-allowed={selectedPageIndex < 0}
         class:bg-gray-500={selectedPageIndex < 0}
         on:click={onAddTextField}>
-        <img src="notes.svg" alt="An icon for adding text" />
+        <img src="notes.svg" alt="Un icono para agregar texto" />
       </label>
       <label
         class="flex items-center justify-center h-full w-8 hover:bg-gray-500
@@ -244,13 +244,13 @@
         on:click={onAddDrawing}
         class:cursor-not-allowed={selectedPageIndex < 0}
         class:bg-gray-500={selectedPageIndex < 0}>
-        <img src="gesture.svg" alt="An icon for adding drawing" />
+        <img src="gesture.svg" alt="Un icono para agregar un dibujo" />
       </label>
     </div>
     <div class="justify-center mr-3 md:mr-4 w-full max-w-xs hidden md:flex">
-      <img src="/edit.svg" class="mr-2" alt="a pen, edit pdf name" />
+      <img src="/edit.svg" class="mr-2" alt="un bolígrafo, editar el nombre del pdf" />
       <input
-        placeholder="Rename your PDF here"
+        placeholder="Renombra tu PDF aquí"
         type="text"
         class="flex-grow bg-transparent"
         bind:value={pdfName} />
@@ -261,12 +261,12 @@
       md:px-4 mr-3 md:mr-4 rounded"
       class:cursor-not-allowed={pages.length === 0 || saving || !pdfFile}
       class:bg-blue-700={pages.length === 0 || saving || !pdfFile}>
-      {saving ? 'Saving' : 'Save'}
+      {saving ? 'Guardando' : 'Guardar'}
     </button>
-    <a href="https://github.com/ShizukuIchi/pdf-editor">
+    <a href="https://github.com/erseco/pdf-editor">
       <img
         src="/GitHub-Mark-32px.png"
-        alt="A GitHub icon leads to personal GitHub page" />
+        alt="Un ícono de GitHub lleva a la página personal de GitHub" />
     </a>
   </div>
   {#if addingDrawing}
@@ -290,9 +290,9 @@
   {/if}
   {#if pages.length}
     <div class="flex justify-center px-5 w-full md:hidden">
-      <img src="/edit.svg" class="mr-2" alt="a pen, edit pdf name" />
+      <img src="/edit.svg" class="mr-2" alt="un bolígrafo, editar el nombre del pdf" />
       <input
-        placeholder="Rename your PDF here"
+        placeholder="Cambie el nombre de su PDF aquí"
         type="text"
         class="flex-grow bg-transparent"
         bind:value={pdfName} />
@@ -357,7 +357,7 @@
     </div>
   {:else}
     <div class="w-full flex-grow flex justify-center items-center">
-      <span class=" font-bold text-3xl text-gray-500">Drag something here</span>
+      <span class=" font-bold text-3xl text-gray-500">Arrastre algo aquí</span>
     </div>
   {/if}
 </main>

@@ -65,7 +65,7 @@ const fonts = {
 // Available fonts
 export const Fonts = {
   ...fonts,
-  標楷體: {
+  CK: {
     src: '/CK.ttf', // 9.9 MB
     correction(size, lineHeight) {
       return (size * lineHeight - size) / 2;
