@@ -204,12 +204,14 @@
       type="file"
       name="pdf"
       id="pdf"
+      accept=".pdf"
       on:change={onUploadPDF}
       class="hidden" />
     <input
       type="file"
       id="image"
       name="image"
+      accept=".gif,.jpg,.jpeg,.png"
       class="hidden"
       on:change={onUploadImage} />
     <label
