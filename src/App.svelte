@@ -257,7 +257,7 @@
     </div>
     <button
       on:click={savePDF}
-      class="w-20 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3
+      class="w-22 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3
       md:px-4 mr-3 md:mr-4 rounded"
       class:cursor-not-allowed={pages.length === 0 || saving || !pdfFile}
       class:bg-blue-700={pages.length === 0 || saving || !pdfFile}>
