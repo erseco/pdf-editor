@@ -361,3 +361,4 @@
     </div>
   {/if}
 </main>
+    <footer class="footer"><div class="text-center"><small class="copyright">Designed with&nbsp;❤️&nbsp;from a remote island</small><br><small class="copyright">2023 © Ernesto Serrano</small></div></footer>
