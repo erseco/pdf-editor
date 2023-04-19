@@ -24,16 +24,6 @@ jobs:
 
       - name: Build
         run: yarn build
-
-      # - name: Upload artifacts
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: github-pages
-      #     path: public
-
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v2
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -41,3 +31,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allow_empty_commit: true
           publish_dir: ./public
+          cname: pdf-editor.ernesto.es
+          enable_jekyll: false
