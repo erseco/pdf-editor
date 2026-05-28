@@ -107,6 +107,8 @@
 </script>
 
 <style>
+  @reference "tailwindcss";
+
   .operation {
     background-color: rgba(0, 0, 0, 0.3);
   }

@@ -155,6 +155,8 @@
 </script>
 
 <style>
+  @reference "tailwindcss";
+
   .editing {
     @apply pointer-events-none border-gray-800 border-dashed;
   }
