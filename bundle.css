@@ -369,7 +369,6 @@
     }
   }
 }
-
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
 .operation.svelte-1t42vjo {
   background-color: rgba(0, 0, 0, 0.3);
@@ -387,8 +386,6 @@
   border-radius: calc(infinity * 1px);
   background-color: var(--color-blue-300, oklch(80.9% 0.105 251.813));
 }
-
-
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
 @layer properties;
 .editing.svelte-j9t9ec {
@@ -423,10 +420,6 @@
   }
 }
 
-
-
-.operation.svelte-17og1k1 {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-
+  .operation.svelte-17og1k1 {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
